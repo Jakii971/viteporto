@@ -1,7 +1,6 @@
-import './input.css';
-
 document.addEventListener("DOMContentLoaded", function () {
-    const accessToken = import.meta.env.VITE_INSTAGRAM_ACCESS_TOKEN;
+    // const accessToken = "IGQWROUWZAZAbnhiWlNTWEdKNWp2bFB0emJaM2pLMWxDNUNvZAG4wamJpVnlDQVMtVlVCOGxOczByZAkJzdFJackJ1RHhfQ29iYkMzcG9YWnNhRG84TklhUjdiRVhDdHRBRjVjUS12MFlCVDlKbWotTFlUejNYVkZA6NDAZD";
+    const accessToken = import.meta.env.VITE_IG_TOKEN;
     const endpoint = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username&access_token=${accessToken}`;
 
     fetch(endpoint)
